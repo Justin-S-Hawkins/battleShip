@@ -22,17 +22,17 @@ function placeShip (board, length, type){
           positions.forEach(({row,col}) => {
           board[row][col] = {type, hit : false};
           });
-          placed = true
-      }
-  }
-}
+          placed = true;
+      };
+  };
+};
 
 function populateBoard( board, largeCount, smallCount){
     for (let i =0; i < largeCount; i++){
         placeShip(board,3,'large');
-    }
+    };
     for (let i = 0; i < smallCount; i++){
         placeShip(board,2,'small');
-    }
-  }
+    };
+  };
 module.exports = {placeShip, populateBoard};

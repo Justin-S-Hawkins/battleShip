@@ -7,11 +7,11 @@ function createBoard ( size){
       }
       board.push(row);
   }
-  return board
-}
+  return board;
+};
 
 function renderBoard(board, debug = false){
-  console.clear()
+  console.clear();
   const display = board.map(row =>
       row.map(cell=> {
           if (debug || cell.hit){
@@ -29,6 +29,6 @@ function renderBoard(board, debug = false){
           return acc;
       },{})
   );
-}
+};
 
-module.exports = {createBoard, renderBoard}
+module.exports = {createBoard, renderBoard};

@@ -2,9 +2,9 @@ const readlineSync = require('readline-sync');
 const options = ['4x4','5x5','6x6'];
 
 function greeting (){
-    console.clear()
-    console.log('Welcome to Battle Ship! 🚢\nselect your Grid size')
-    const grid = readlineSync.keyInSelect(options, 'Choose your board size!')
+    console.clear();
+    console.log('Welcome to Battle Ship! 🚢\nselect your Grid size');
+    const grid = readlineSync.keyInSelect(options,'Choose your board size!');
    if(options[grid] ==='4x4') return 4;
    if(options[grid] ==='5x5') return 5;
    if(options[grid] ==='6x6') return 6;
@@ -33,8 +33,8 @@ function handleGuess(board){
         continue;
        }
        return { row, col};
-    }
-}
+    };
+};
 
 
 module.exports = {greeting, handleGuess};

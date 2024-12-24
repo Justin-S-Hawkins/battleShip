@@ -1,4 +1,3 @@
-const readlineSync = require('readline-sync');
 const {createBoard, renderBoard} = require('./board');
 const {placeShip, populateBoard} = require('./ships');
 const {greeting, handleGuess} = require('./utilites');
